@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	int *p;
+	int **pp;
+	int val=1903;
+	
+	 p=&val;
+	 pp=&p;
+	
+	printf("degerler:\n***********\n");
+	printf("val= %d\n", val);
+	printf("*p= %d\n", *p);
+	printf("**pp= %d\n", **pp);
+	printf("adresler:\n***********\n");
+	printf("&val= %d\n", &val);
+	printf("p= %d\n", p);
+	printf("&p= %d\n", &p);
+	printf("pp= %d\n", pp);
+
+	return 0;
+}
